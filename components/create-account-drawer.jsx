@@ -58,7 +58,7 @@ const CreateAccountDrawer = ({children}) => {
                         <div className='space-y-2'>
                             <label htmlFor='name' className='text-sm font-medium'>Account Name</label>
                             <Input id="name"
-                                placeholder="e.g. Main Checking"
+                                placeholder="Account Name"
                                 {...register("name")}
                             />
                             {errors.name && (<p className='text-sm text-red-500'>{errors.name.message}</p>)}
@@ -110,7 +110,7 @@ const CreateAccountDrawer = ({children}) => {
                                             Creating...
                                         </>
                                     ) : (
-                                        "Create Account"
+                                        "Cancel"
                                     )}
                                 </Button>
                             </DrawerClose>
